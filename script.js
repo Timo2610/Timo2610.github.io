@@ -68,7 +68,7 @@ async function ladeReiseziele() {
     } catch (error) {
         console.error(error);
         orteContainer.innerHTML =
-            "<p>Die Reiseziele konnten nicht geladen werden. Bitte prüfe, ob die Website-Dateien vollständig hochgeladen wurden.</p>";
+            "<p>Die Reiseziele konnten nicht geladen werden. Bitte prüfe, ob der Server läuft.</p>";
     }
 }
 
