@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -9,113 +8,40 @@
   <title>Unsere Erinnerungen ♥</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <main class="container">
-
-    <!-- PASSWORTSEITE -->
     <section id="login" class="login-card">
       <div class="heart">♥</div>
       <p class="eyebrow">EIN KLEINES GEHEIMNIS</p>
       <h1>Nur für dich</h1>
-
-      <p class="intro">
-        Ein kleiner Ort voller Erinnerungen.
-        Gib unser Geheimnis ein.
-      </p>
-
+      <p class="intro">Ein kleiner Ort voller Erinnerungen. Gib unser Geheimnis ein.</p>
       <form id="loginForm">
-        <input
-          type="password"
-          id="password"
-          placeholder="Unser Passwort"
-          autocomplete="off"
-          required
-          aria-label="Passwort"
-        >
+        <input type="password" id="password" placeholder="Unser Passwort" autocomplete="off" required aria-label="Passwort">
         <button type="submit">Öffnen ♥</button>
       </form>
-
       <p id="fehler" role="status"></p>
     </section>
 
-    <!-- ÜBERSICHT -->
     <section id="home" hidden>
       <header class="hero">
         <p class="eyebrow">NUR WIR ZWEI</p>
         <h1>Unsere Erinnerungen <span>♥</span></h1>
-        <p class="intro">
-          Kleine Orte, große Erinnerungen
-          und ganz viele Momente mit dir.
-        </p>
+        <p class="intro">Kleine Orte, große Erinnerungen und ganz viele Momente mit dir.</p>
       </header>
-
       <div id="orte" class="places"></div>
     </section>
 
-    <!-- GALERIE EINES REISEZIELS -->
     <section id="detail" hidden>
-      <button id="backButton" class="back-button" type="button">
-        <span aria-hidden="true">←</span>
-        Alle Erinnerungen
-      </button>
-
+      <button id="backButton" class="back-button" type="button"><span aria-hidden="true">←</span> Alle Erinnerungen</button>
       <header class="detail-header">
         <p class="eyebrow">EIN KAPITEL UNSERER GESCHICHTE</p>
         <h1 id="placeTitle"></h1>
-        <p id="placeDescription" class="description"></p>
+        <div id="placeDescription" class="description"></div>
       </header>
-
-      <div id="photos" class="photos"></div>
-
-      <p id="emptyMessage" class="empty-message" hidden>
-        Hier warten bald unsere gemeinsamen Fotos. ♥
-      </p>
+      <div id="albumArea" class="album-area"></div>
     </section>
-
     <footer>Mit ganz viel Liebe für dich gemacht ♥</footer>
   </main>
-
-  <!-- GROSSE FOTOANSICHT -->
-  <div
-    id="lightbox"
-    class="lightbox"
-    role="dialog"
-    aria-modal="true"
-    aria-label="Fotoansicht"
-    aria-hidden="true"
-    hidden
-  >
-    <button
-      id="closeLightbox"
-      class="lightbox-close"
-      type="button"
-      aria-label="Fotoansicht schließen"
-    >×</button>
-
-    <p id="photoCounter" class="photo-counter">1 / 1</p>
-
-    <button
-      id="prevPhoto"
-      class="lightbox-arrow lightbox-prev"
-      type="button"
-      aria-label="Vorheriges Foto"
-    >‹</button>
-
-    <div class="lightbox-content">
-      <img id="largePhoto" src="" alt="">
-    </div>
-
-    <button
-      id="nextPhoto"
-      class="lightbox-arrow lightbox-next"
-      type="button"
-      aria-label="Nächstes Foto"
-    >›</button>
-
-    <p class="swipe-hint">Wischen oder Pfeile antippen</p>
-  </div>
-
   <script src="script.js"></script>
 </body>
 </html>
