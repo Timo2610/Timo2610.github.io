@@ -1,10 +1,19 @@
 [
   {
+    "name": "Dresden",
+    "ordner": "Dresden",
+    "bilder": [],
+    "datum": "",
+    "aktivitaeten": [],
+    "erinnerungen": ""
+  },
+  {
     "name": "Frankfurt",
+    "ordner": "Frankfurt",
+    "bilder": [
+      "bilder/Frankfurt/Screenshot%202026-10-12%20122855.png"
+    ],
     "datum": "12.08.2026 – 16.08.2026",
-    "emoji": "🌆",
-    "farbe": "#ead8df",
-    "albumLink": "https://1drv.ms/a/c/7a1d2a8a168ffac5/IgC0IkKx6_HoTLNzTTHPPZiDAWME77E-KERrPrQ0zsygo5U",
     "aktivitaeten": [
       "Durch die Stadt spazieren",
       "Sonnenuntergang am Eiffelturm",
@@ -13,11 +22,45 @@
     "erinnerungen": "Weißt du noch, wie wir uns verlaufen haben und dabei diesen wunderschönen kleinen Platz entdeckt haben? Genau solche Momente möchte ich nie vergessen. ❤️"
   },
   {
+    "name": "München",
+    "ordner": "München",
+    "bilder": [],
+    "datum": "",
+    "aktivitaeten": [],
+    "erinnerungen": ""
+  },
+  {
+    "name": "Nürnberg",
+    "ordner": "Nürnberg",
+    "bilder": [],
+    "datum": "",
+    "aktivitaeten": [],
+    "erinnerungen": ""
+  },
+  {
+    "name": "Schloss Neuschwarnstein",
+    "ordner": "Schloss Neuschwarnstein",
+    "bilder": [],
+    "datum": "",
+    "aktivitaeten": [],
+    "erinnerungen": ""
+  },
+  {
+    "name": "Zugspitze",
+    "ordner": "Zugspitze",
+    "bilder": [],
+    "datum": "",
+    "aktivitaeten": [],
+    "erinnerungen": ""
+  },
+  {
     "name": "Ägypten",
+    "ordner": "Ägypten",
+    "bilder": [
+      "bilder/%C3%84gypten/Screenshot%202026-10-12%20122941.png",
+      "bilder/%C3%84gypten/Screenshot%202026-10-12%20123010.png"
+    ],
     "datum": "Noch offen",
-    "emoji": "🌊",
-    "farbe": "#d9e9e9",
-    "albumLink": "",
     "aktivitaeten": [
       "Gemeinsam am Meer entspannen",
       "Neue Orte entdecken"
