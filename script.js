@@ -1,9 +1,7 @@
 // ==============================
 // EINSTELLUNGEN
 // ==============================
-// Das Passwort ist wie in der bisherigen Version nur ein einfacher Sichtschutz.
-// Es ist kein echter Schutz vor dem direkten Abruf der Website-Dateien.
-const richtigesPasswort = "123";
+const richtigesPasswort = "123"; // Optional ändern; nur einfacher Sichtschutz.
 
 const login = document.getElementById("login");
 const loginForm = document.getElementById("loginForm");
@@ -18,7 +16,6 @@ const placeDescription = document.getElementById("placeDescription");
 const albumArea = document.getElementById("albumArea");
 
 let reiseziele = [];
-let aktuellerOrt = null;
 
 loginForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -43,17 +40,16 @@ async function ladeReiseziele() {
     zeigeReiseziele();
   } catch (error) {
     console.error(error);
-    orteContainer.innerHTML = "<p>Die Reiseziele konnten nicht geladen werden. Bitte prüfe die veröffentlichte Website.</p>";
+    orteContainer.innerHTML = "<p>Die Reiseziele konnten nicht geladen werden. Bitte aktualisiere die Website erneut.</p>";
   }
 }
 
 function zeigeReiseziele() {
   orteContainer.innerHTML = "";
-  if (reiseziele.length === 0) {
+  if (!reiseziele.length) {
     orteContainer.innerHTML = "<p>Hier sind noch keine Reiseziele vorhanden. ❤️</p>";
     return;
   }
-
   reiseziele.forEach(function (ort) {
     const karte = document.createElement("button");
     karte.type = "button";
@@ -79,7 +75,8 @@ function zeigeReiseziele() {
       inhalt.appendChild(datum);
     }
     const status = document.createElement("p");
-    status.textContent = ort.albumLink ? "Fotoalbum ansehen ♥" : "Erinnerungen entdecken ♥";
+    status.className = "card-link-hint";
+    status.textContent = ort.albumLink ? "Fotoalbum öffnen ♥ ↗" : "Fotoalbum-Link fehlt";
     inhalt.appendChild(status);
 
     karte.appendChild(cover);
@@ -90,7 +87,6 @@ function zeigeReiseziele() {
 }
 
 function zeigeOrt(ort) {
-  aktuellerOrt = ort;
   home.hidden = true;
   detail.hidden = false;
   placeTitle.textContent = ort.name;
@@ -103,7 +99,6 @@ function zeigeOrt(ort) {
     datum.textContent = "📅 " + ort.datum;
     placeDescription.appendChild(datum);
   }
-
   if (Array.isArray(ort.aktivitaeten) && ort.aktivitaeten.length) {
     const liste = document.createElement("ul");
     liste.className = "activity-list";
@@ -114,7 +109,6 @@ function zeigeOrt(ort) {
     });
     placeDescription.appendChild(liste);
   }
-
   if (ort.erinnerungen && ort.erinnerungen.trim()) {
     const ueberschrift = document.createElement("h3");
     ueberschrift.textContent = "Unsere Erinnerungen ❤️";
@@ -134,13 +128,14 @@ function zeigeOrt(ort) {
   ueberschrift.textContent = "Unsere Fotos";
   albumArea.appendChild(ueberschrift);
 
+  const hatLink = typeof ort.albumLink === "string" && /^https?:\/\//i.test(ort.albumLink);
   const text = document.createElement("p");
-  text.textContent = ort.albumLink
-    ? "Alle gemeinsamen Bilder an einem Ort – öffne unser Fotoalbum."
-    : "Hier fehlt noch der Link zu unserem Fotoalbum. Du kannst ihn später in der Datei OneDrive_Alben/orte.json ergänzen.";
+  text.textContent = hatLink
+    ? "Alle gemeinsamen Bilder an einem Ort."
+    : "Hier kannst du später den Link zu deinem OneDrive-Fotoalbum eintragen.";
   albumArea.appendChild(text);
 
-  if (ort.albumLink && istGueltigerWebLink(ort.albumLink)) {
+  if (hatLink) {
     const link = document.createElement("a");
     link.className = "album-link";
     link.href = ort.albumLink;
@@ -151,22 +146,12 @@ function zeigeOrt(ort) {
   } else {
     const hinweis = document.createElement("div");
     hinweis.className = "no-link";
-    hinweis.textContent = "Der OneDrive-Link wird noch ergänzt. ♥";
+    hinweis.textContent = "Der OneDrive-Link fehlt noch. ♥";
     albumArea.appendChild(hinweis);
-  }
-}
-
-function istGueltigerWebLink(wert) {
-  try {
-    const url = new URL(wert);
-    return url.protocol === "https:" || url.protocol === "http:";
-  } catch {
-    return false;
   }
 }
 
 backButton.addEventListener("click", function () {
   detail.hidden = true;
   home.hidden = false;
-  aktuellerOrt = null;
 });
