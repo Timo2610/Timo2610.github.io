@@ -38,12 +38,36 @@
     "erinnerungen": ""
   },
   {
-    "name": "Schloss Neuschwarnstein",
-    "ordner": "Schloss Neuschwarnstein",
-    "bilder": [],
-    "datum": "",
-    "aktivitaeten": [],
-    "erinnerungen": ""
+    "name": "Schloss Neuschwanstein",
+    "ordner": "Schloss Neuschwanstein",
+    "bilder": [
+      "bilder/Schloss%20Neuschwanstein/20250418_103338390_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250418_115022431_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250418_115202630_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250418_115207386_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250418_115317107_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250418_115319202_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250418_123248239_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250418_123824533_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250418_140009807_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250418_140019515_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250418_140105616_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250419_101634361_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250419_101810250_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250419_133803683_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250420_094652028_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250420_094736373_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250420_095336413_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250420_102457725_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250420_131149674_iOS.jpg",
+      "bilder/Schloss%20Neuschwanstein/20250420_131314772_iOS.jpg"
+    ],
+    "datum": "Noch offen",
+    "aktivitaeten": [
+      "Gemeinsam das Schloss erkunden",
+      "Die Landschaft genießen"
+    ],
+    "erinnerungen": "Hier kommt unsere persönliche Geschichte zu diesem Reiseziel hin. 🥰"
   },
   {
     "name": "Zugspitze",
