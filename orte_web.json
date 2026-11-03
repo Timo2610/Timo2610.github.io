@@ -32,7 +32,23 @@
   {
     "name": "Nürnberg",
     "ordner": "Nürnberg",
-    "bilder": [],
+    "bilder": [
+      "bilder/N%C3%BCrnberg/20251019_121255069_iOS.jpg",
+      "bilder/N%C3%BCrnberg/20251019_121303732_iOS.jpg",
+      "bilder/N%C3%BCrnberg/20251019_121326993_iOS.jpg",
+      "bilder/N%C3%BCrnberg/20251019_121343315_iOS.jpg",
+      "bilder/N%C3%BCrnberg/20251019_121440809_iOS.jpg",
+      "bilder/N%C3%BCrnberg/20251019_121500840_iOS.jpg",
+      "bilder/N%C3%BCrnberg/20251020_112403897_iOS.jpg",
+      "bilder/N%C3%BCrnberg/20251020_113009703_iOS.jpg",
+      "bilder/N%C3%BCrnberg/20251020_124205000_iOS.MOV",
+      "bilder/N%C3%BCrnberg/20251020_124831369_iOS%201.jpg",
+      "bilder/N%C3%BCrnberg/20251020_124831369_iOS.jpg",
+      "bilder/N%C3%BCrnberg/20251020_132233781_iOS.jpg",
+      "bilder/N%C3%BCrnberg/20251020_132838806_iOS.jpg",
+      "bilder/N%C3%BCrnberg/20251020_133501594_iOS.jpg",
+      "bilder/N%C3%BCrnberg/20251020_135101637_iOS.jpg"
+    ],
     "datum": "",
     "aktivitaeten": [],
     "erinnerungen": ""

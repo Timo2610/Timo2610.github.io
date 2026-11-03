@@ -312,7 +312,7 @@ button:hover {
   inset: 0;
   display: grid;
   grid-template-columns: 56px minmax(0, 1fr) 56px;
-  grid-template-rows: 64px minmax(0, 1fr) 54px;
+  grid-template-rows: 54px minmax(0, 1fr) 40px 28px;
   align-items: center;
   justify-items: center;
   padding:
@@ -365,10 +365,17 @@ button:hover {
   height: 100%;
   min-width: 0;
   min-height: 0;
-  touch-action: pan-y;
+  touch-action: none;
+  overscroll-behavior: contain;
 }
 
-.lightbox-content img {
+.lightbox-content img,
+#largePhoto[hidden],
+#largeVideo[hidden] {
+  display: none !important;
+}
+
+.lightbox-content video {
   display: block;
   max-width: 100%;
   max-height: 100%;
@@ -378,6 +385,27 @@ button:hover {
   border-radius: 4px;
   user-select: none;
   -webkit-user-drag: none;
+  transition: transform 0.12s ease;
+  transform-origin: center center;
+}
+
+#largePhoto[hidden],
+#largeVideo[hidden] {
+  display: none !important;
+}
+
+.lightbox-content video {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+  background: #000;
+}
+
+.gallery-video {
+  background: #181818;
+  object-fit: contain !important;
 }
 
 .lightbox-arrow {
@@ -405,7 +433,7 @@ button:hover {
 
 .swipe-hint {
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 4;
   align-self: center;
   margin: 0;
   color: #d9cbd0;
