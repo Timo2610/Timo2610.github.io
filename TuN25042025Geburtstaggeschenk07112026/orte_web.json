@@ -23,9 +23,12 @@
       "bilder/Dresden/20251207_121130306_iOS.jpg",
       "bilder/Dresden/20251207_134846000_iOS.MOV"
     ],
-    "datum": "",
-    "aktivitaeten": [],
-    "erinnerungen": ""
+    "datum": "Noch offen",
+    "aktivitaeten": [
+      "Gemeinsam am Meer entspannen",
+      "Neue Orte entdecken"
+    ],
+    "erinnerungen": "Hier kommt unsere persönliche Geschichte zu diesem Reiseziel hin. 🥰"
   },
   {
     "name": "Frankfurt",
@@ -69,9 +72,12 @@
       "bilder/M%C3%BCnchen/20250608_132208392_iOS.jpg",
       "bilder/M%C3%BCnchen/20250608_132212106_iOS.jpg"
     ],
-    "datum": "",
-    "aktivitaeten": [],
-    "erinnerungen": ""
+    "datum": "Noch offen",
+    "aktivitaeten": [
+      "Gemeinsam am Meer entspannen",
+      "Neue Orte entdecken"
+    ],
+    "erinnerungen": "Hier kommt unsere persönliche Geschichte zu diesem Reiseziel hin. 🥰"
   },
   {
     "name": "Nürnberg",
@@ -93,9 +99,12 @@
       "bilder/N%C3%BCrnberg/20251020_133501594_iOS.jpg",
       "bilder/N%C3%BCrnberg/20251020_135101637_iOS.jpg"
     ],
-    "datum": "",
-    "aktivitaeten": [],
-    "erinnerungen": ""
+    "datum": "Noch offen",
+    "aktivitaeten": [
+      "Gemeinsam am Meer entspannen",
+      "Neue Orte entdecken"
+    ],
+    "erinnerungen": "Hier kommt unsere persönliche Geschichte zu diesem Reiseziel hin. 🥰"
   },
   {
     "name": "Schloss Neuschwanstein",
@@ -122,12 +131,9 @@
       "bilder/Schloss%20Neuschwanstein/20250420_131149674_iOS.jpg",
       "bilder/Schloss%20Neuschwanstein/20250420_131314772_iOS.jpg"
     ],
-    "datum": "Noch offen",
-    "aktivitaeten": [
-      "Gemeinsam das Schloss erkunden",
-      "Die Landschaft genießen"
-    ],
-    "erinnerungen": "Hier kommt unsere persönliche Geschichte zu diesem Reiseziel hin. 🥰"
+    "datum": "18.04.2025 - 20.04.2025",
+    "aktivitaeten": [],
+    "erinnerungen": ""
   },
   {
     "name": "Zugspitze",
@@ -182,9 +188,12 @@
       "bilder/Zugspitze/20260608_093809000_iOS.jpg",
       "bilder/Zugspitze/20260608_093812000_iOS.MP4"
     ],
-    "datum": "",
-    "aktivitaeten": [],
-    "erinnerungen": ""
+    "datum": "Noch offen",
+    "aktivitaeten": [
+      "Gemeinsam am Meer entspannen",
+      "Neue Orte entdecken"
+    ],
+    "erinnerungen": "Hier kommt unsere persönliche Geschichte zu diesem Reiseziel hin. 🥰"
   },
   {
     "name": "Ägypten",
@@ -220,7 +229,7 @@
       "bilder/%C3%84gypten/IMG_2714.jpeg",
       "bilder/%C3%84gypten/IMG_2718.jpeg"
     ],
-    "datum": "Noch offen",
+    "datum": "29.08.2026 - 07.09.2026",
     "aktivitaeten": [
       "Gemeinsam am Meer entspannen",
       "Neue Orte entdecken"
