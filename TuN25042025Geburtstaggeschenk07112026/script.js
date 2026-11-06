@@ -21,7 +21,7 @@ const largePhoto = document.getElementById("largePhoto");
 const largeVideo = document.getElementById("largeVideo");
 const nextPhoto = document.getElementById("nextPhoto");
 
-const richtigesPasswort = "123";
+const richtigesPasswort = "passwort123";
 
 let reiseziele = [];
 let aktuellerOrt = null;
@@ -49,7 +49,7 @@ loginForm.addEventListener("submit", function (event) {
         fehler.textContent = "";
         ladeReiseziele();
     } else {
-        fehler.textContent = "Das Passwort stimmt leider nicht. ❤️";
+        fehler.textContent = "Das Passwort stimmt leider nicht.";
         passwordInput.value = "";
         passwordInput.focus();
     }
